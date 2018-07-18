@@ -1,0 +1,70 @@
+PODS:
+  - FirebaseAuth (5.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (5.0.0):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (5.0.0):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseStorage (3.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GTMSessionFetcher/Core (1.1.13)
+  - leveldb-library (1.20)
+
+DEPENDENCIES:
+  - FirebaseAuth (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `5.0.0`)
+  - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `5.0.0`)
+  - FirebaseDatabase (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `5.0.0`)
+  - FirebaseStorage (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `5.0.0`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - leveldb-library
+
+EXTERNAL SOURCES:
+  FirebaseAuth:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+  FirebaseCore:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+  FirebaseDatabase:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+  FirebaseStorage:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+
+CHECKOUT OPTIONS:
+  FirebaseAuth:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+  FirebaseCore:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+  FirebaseDatabase:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+  FirebaseStorage:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 5.0.0
+
+SPEC CHECKSUMS:
+  FirebaseAuth: acbeef02fe7c3a26624e309849f3fe30c84115af
+  FirebaseCore: e46e4babb9de298fb2f736958edcc6da1dc60d73
+  FirebaseDatabase: 697eb53e5b4fe7cd4fa8756c1f82a9fca011345f
+  FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GTMSessionFetcher: 5bb1eae636127de695590f50e7d248483eb891e6
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+
+PODFILE CHECKSUM: 9b8dc4b77855641ea050d576c3c287f3eb627ad4
+
+COCOAPODS: 1.5.3
