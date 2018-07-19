@@ -13,7 +13,7 @@ import FirebaseDatabase
 class MemoViewController: NSViewController {
     
     private var userRef: DatabaseReference?
-    private var observations: [DatabaseObservation] = []
+    private var binder: QueryObserverBinder?
     
     private var memos: [Memo] = []
     
@@ -95,7 +95,7 @@ extension MemoViewController {
     
     override func viewWillDisappear() {
         
-        observations = []
+        binder = nil
         
         userRef = nil
         
@@ -111,9 +111,9 @@ extension MemoViewController {
         
         guard let ref = userRef else { return }
         
-        let binder = QueryObserverBinder(query: ref)
+        binder = QueryObserverBinder(query: ref)
         
-        binder.addObserver(.childAdded, type: Memo.self) { result in
+        binder?.addObserver(.childAdded, type: Memo.self) { result in
             
             result
                 .ifValue { memo in
@@ -127,7 +127,7 @@ extension MemoViewController {
                 .ifError { error in print(error) }
         }
         
-        binder.addObserver(.childChanged, type: Memo.self) { result in
+        binder?.addObserver(.childChanged, type: Memo.self) { result in
             
             result
                 .ifValue { memo in
@@ -144,7 +144,5 @@ extension MemoViewController {
                 }
                 .ifError { error in print(error) }
         }
-        
-        observations = binder.observations
     }
 }
