@@ -1,5 +1,5 @@
 //
-//  QueryObserverBinder.swift
+//  QueryObserver.swift
 //  FirebaseMacOS
 //
 //  Created by Hori,Masaki on 2018/07/16.
@@ -26,7 +26,7 @@ private class DatabaseObservation {
     }
 }
 
-class QueryObserverBinder {
+class QueryObserver {
     
     private let query: DatabaseQuery
     
@@ -38,7 +38,7 @@ class QueryObserverBinder {
     }
 }
 
-extension QueryObserverBinder {
+extension QueryObserver {
     
     func addObserver<D: DatabaseDecodable>(_ type: DataEventType, type decodable: D.Type, with handler: @escaping (Result<D>) -> Void) {
         
