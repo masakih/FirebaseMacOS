@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-class DatabaseObservation {
+private class DatabaseObservation {
     
     private let query: DatabaseQuery
     private let handle: DatabaseHandle
@@ -30,7 +30,7 @@ class QueryObserverBinder {
     
     private let query: DatabaseQuery
     
-    private(set) var observations: [DatabaseObservation] = []
+    private var observations: [DatabaseObservation] = []
     
     init(query: DatabaseQuery) {
         
